@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "vinebound",
+	"version": "${version}",
+	"name": "Vinebound",
+	"description": "Vinebound Mod by Students for a University Module",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"sources": "https://github.com/lighter3000/vinebound-1.21.9"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/vinebound/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lighter3000.vinebound.Vinebound"
+		],
+		"fabric-datagen": [
+			"net.lighter3000.vinebound.VineboundDataGenerator"
+		],
+      "client": [
+        "net.lighter3000.vinebound.VineboundClient"
+      ]
+	},
+	"mixins": [
+		"vinebound.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.9",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
