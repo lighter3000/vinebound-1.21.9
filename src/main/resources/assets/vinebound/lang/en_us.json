@@ -3,5 +3,7 @@
   "item.vinebound.ancient_hammer": "Ancient Hammer",
 
   "block.vinebound.moss_stone": "Moss Stone",
-  "item.vinebound.moss_stone": "Moss Stone"
+  "item.vinebound.moss_stone": "Moss Stone",
+
+  "itemgroup.vinebound.vinebound_items": "Vinebound"
 }
