@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item ANCIENT_CHISEL = registerItem("ancient_chisel", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Vinebound.MOD_ID,"ancient_chisel")))));
-
+    public static final Item ANCIENT_HAMMER = registerItem("ancient_hammer", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Vinebound.MOD_ID, "ancient_hammer")))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Vinebound.MOD_ID, name), item);
@@ -24,6 +24,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ANCIENT_CHISEL);
+            fabricItemGroupEntries.add(ANCIENT_HAMMER);
         });
     }
 }

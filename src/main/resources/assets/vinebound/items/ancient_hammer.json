@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type" : "minecraft:model",
+    "model": "vinebound:item/ancient_hammer"
+  }
+}
