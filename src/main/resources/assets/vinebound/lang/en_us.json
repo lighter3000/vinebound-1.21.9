@@ -1,4 +1,7 @@
 {
   "item.vinebound.ancient_chisel": "Ancient Chisel",
-  "item.vinebound.ancient_hammer": "Ancient Hammer"
+  "item.vinebound.ancient_hammer": "Ancient Hammer",
+
+  "block.vinebound.moss_stone": "Moss Stone",
+  "item.vinebound.moss_stone": "Moss Stone"
 }
