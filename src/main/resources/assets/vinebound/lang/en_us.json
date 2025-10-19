@@ -5,5 +5,8 @@
   "block.vinebound.moss_stone": "Moss Stone",
   "item.vinebound.moss_stone": "Moss Stone",
 
-  "itemgroup.vinebound.vinebound_items": "Vinebound"
+  "itemgroup.vinebound.vinebound_items": "Vinebound",
+
+  "block.vinebound.moss_golem": "Moss Golem",
+  "item.vinebound.moss_golem": "Moss Golem"
 }

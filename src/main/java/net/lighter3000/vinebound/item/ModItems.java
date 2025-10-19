@@ -2,6 +2,8 @@ package net.lighter3000.vinebound.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lighter3000.vinebound.Vinebound;
+import net.lighter3000.vinebound.item.custom.AncientChiselItem;
+import net.lighter3000.vinebound.item.custom.AncientHammerItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -12,8 +14,11 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item ANCIENT_CHISEL = registerItem("ancient_chisel", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Vinebound.MOD_ID,"ancient_chisel")))));
-    public static final Item ANCIENT_HAMMER = registerItem("ancient_hammer", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Vinebound.MOD_ID, "ancient_hammer")))));
+    //public static final Item ANCIENT_CHISEL = registerItem("ancient_chisel", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Vinebound.MOD_ID,"ancient_chisel")))));
+    //public static final Item ANCIENT_HAMMER = registerItem("ancient_hammer", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Vinebound.MOD_ID, "ancient_hammer")))));
+
+    public static final Item ANCIENT_HAMMER = registerItem("ancient_hammer", new AncientHammerItem(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Vinebound.MOD_ID, "ancient_hammer"))).maxDamage(32)));
+    public static final Item ANCIENT_CHISEL = registerItem("ancient_chisel", new AncientChiselItem(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Vinebound.MOD_ID,"ancient_chisel"))).maxDamage(32)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Vinebound.MOD_ID, name), item);

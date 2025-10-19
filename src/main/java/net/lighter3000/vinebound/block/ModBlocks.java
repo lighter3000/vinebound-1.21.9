@@ -19,6 +19,9 @@ public class ModBlocks {
     public static final Block MOSS_STONE = registerBlock("moss_stone", AbstractBlock.Settings.create()
             .strength(4f).requiresTool().sounds(BlockSoundGroup.STONE));
 
+    public static final Block MOSS_GOLEM = registerBlock("moss_golem", AbstractBlock.Settings.create()
+            .strength(4f).requiresTool().sounds(BlockSoundGroup.STONE));
+
     private static Block registerBlock(String name, AbstractBlock.Settings blockSettings) {
         RegistryKey<Block> key = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Vinebound.MOD_ID, name));
         Block block = new Block(blockSettings.registryKey(key));
@@ -37,6 +40,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.MOSS_STONE);
+            fabricItemGroupEntries.add(ModBlocks.MOSS_GOLEM);
         });
     }
 }
