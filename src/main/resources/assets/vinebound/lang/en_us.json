@@ -8,5 +8,8 @@
   "itemgroup.vinebound.vinebound_items": "Vinebound",
 
   "block.vinebound.moss_golem": "Moss Golem",
-  "item.vinebound.moss_golem": "Moss Golem"
+  "item.vinebound.moss_golem": "Moss Golem",
+
+  "block.vinebound.trading_table": "Trading Table",
+  "item.vinebound.trading_table": "Trading Table"
 }

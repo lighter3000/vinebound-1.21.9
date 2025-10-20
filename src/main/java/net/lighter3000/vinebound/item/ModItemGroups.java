@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ANCIENT_CHISEL);
                         entries.add(ModBlocks.MOSS_STONE);
                         entries.add(ModBlocks.MOSS_GOLEM);
+                        entries.add(ModBlocks.TRADING_TABLE);
                     }).build());
 
 
