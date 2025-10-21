@@ -43,4 +43,5 @@ public class TradingTableBlock extends HorizontalFacingBlock {
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(FACING);
     }
+
 }
