@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "C": "minecraft:cobblestone",
+    "M": "minecraft:moss_carpet"
+  },
+  "pattern": [
+    "M",
+    "C"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vinebound:moss_stone"
+  }
+}

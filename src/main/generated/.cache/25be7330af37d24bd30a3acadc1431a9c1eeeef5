@@ -1,0 +1,4 @@
+// 1.21.9	-999999999-01-01T00:00:00	Vinebound/Block Loot Tables
+cf14fac3088eb571789cbb0bcdd9e54422987e2c data/vinebound/loot_table/blocks/moss_golem.json
+9a6ba61e229dea6708aac2bdd400951a1426f1ef data/vinebound/loot_table/blocks/moss_stone.json
+556139f2e69eee47055cb84266ac207e0dd0a824 data/vinebound/loot_table/blocks/trading_table.json
