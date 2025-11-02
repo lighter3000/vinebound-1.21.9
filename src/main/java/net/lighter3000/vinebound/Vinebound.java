@@ -2,7 +2,10 @@ package net.lighter3000.vinebound;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.lighter3000.vinebound.block.ModBlocks;
+import net.lighter3000.vinebound.entity.ModEntities;
+import net.lighter3000.vinebound.entity.custom.MossGolemEntity;
 import net.lighter3000.vinebound.item.ModItemGroups;
 import net.lighter3000.vinebound.item.ModItems;
 import org.slf4j.Logger;
@@ -17,5 +20,9 @@ public class Vinebound implements ModInitializer {
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
         ModItemGroups.registerItemGroups();
+
+        ModEntities.registerModEntities();
+
+        FabricDefaultAttributeRegistry.register(ModEntities.MOSS_GOLEM, MossGolemEntity.createAttributes());
 	}
 }
