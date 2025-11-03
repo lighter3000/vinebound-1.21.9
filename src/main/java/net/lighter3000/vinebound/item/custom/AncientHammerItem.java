@@ -20,7 +20,7 @@ public class AncientHammerItem extends Item { // CTRL + H on Item marked to see 
 
     private static final Map<Block, Block> HAMMER_MAP =
             Map.of(
-                    ModBlocks.MOSS_STONE, ModBlocks.MOSS_GOLEM // Placeholder, later to ModBlocks.MOSS_GOLEM
+                    ModBlocks.MOSS_STONE, ModBlocks.MOSS_GOLEM
             );
 
 

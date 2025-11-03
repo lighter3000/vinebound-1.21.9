@@ -28,7 +28,7 @@ public class MossGolemModel extends EntityModel<MossGolemRenderState> {
 
 
     private final Animation walkingAnimation;
-    private final Animation idlingAnimation;
+    //private final Animation idlingAnimation;
 
 
     public MossGolemModel(ModelPart root) {
@@ -46,7 +46,7 @@ public class MossGolemModel extends EntityModel<MossGolemRenderState> {
         this.left_eye = this.eyes.getChild("left_eye");
 
         this.walkingAnimation = MossGolemAnimation.WALKING.createAnimation(root);
-        this.idlingAnimation = MossGolemAnimation.IDLE.createAnimation(root);
+        //this.idlingAnimation = MossGolemAnimation.IDLE.createAnimation(root);
     }
 
     public static TexturedModelData getTexturedModelData() {
@@ -88,8 +88,8 @@ public class MossGolemModel extends EntityModel<MossGolemRenderState> {
     }
 
     private void setEyeDirection(float eyeX, float eyeY) {
-        eyeX = MathHelper.clamp(eyeX, -0.3f, 0.5f);
-        eyeY = MathHelper.clamp(eyeY, -0.3f, 0.5f);
+        eyeX = MathHelper.clamp(eyeX, -0.3f, 0.7f);
+        eyeY = MathHelper.clamp(eyeY, -0.3f, 1f);
 
 
         this.eyes.originX = eyeX;

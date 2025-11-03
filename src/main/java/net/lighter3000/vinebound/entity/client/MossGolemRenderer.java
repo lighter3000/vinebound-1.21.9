@@ -29,6 +29,7 @@ public class MossGolemRenderer extends MobEntityRenderer<MossGolemEntity, MossGo
         matrices.multiply(net.minecraft.util.math.RotationAxis.POSITIVE_Y.rotationDegrees(180.0F));
     }
 
+
     @Override
     public void render(MossGolemRenderState livingEntityRenderState, MatrixStack matrixStack,
                        OrderedRenderCommandQueue orderedRenderCommandQueue, CameraRenderState cameraRenderState) {
