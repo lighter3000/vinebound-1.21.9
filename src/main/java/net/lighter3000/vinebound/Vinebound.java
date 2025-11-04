@@ -8,6 +8,7 @@ import net.lighter3000.vinebound.entity.ModEntities;
 import net.lighter3000.vinebound.entity.custom.MossGolemEntity;
 import net.lighter3000.vinebound.item.ModItemGroups;
 import net.lighter3000.vinebound.item.ModItems;
+import net.lighter3000.vinebound.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,6 +24,10 @@ public class Vinebound implements ModInitializer {
 
         ModEntities.registerModEntities();
 
+        ModWorldGeneration.generateModWorldGen();
+
         FabricDefaultAttributeRegistry.register(ModEntities.MOSS_GOLEM, MossGolemEntity.createAttributes());
+
+
 	}
 }

@@ -28,12 +28,14 @@ public class MossGolemModel extends EntityModel<MossGolemRenderState> {
 
 
     private final Animation walkingAnimation;
+    private final Animation attackAnimation;
     //private final Animation idlingAnimation;
 
 
     public MossGolemModel(ModelPart root) {
         super(root);
         this.root = root;
+
         this.golem = this.root.getChild("golem");
         this.eyes = this.golem.getChild("eyes");
 
@@ -46,6 +48,8 @@ public class MossGolemModel extends EntityModel<MossGolemRenderState> {
         this.left_eye = this.eyes.getChild("left_eye");
 
         this.walkingAnimation = MossGolemAnimation.WALKING.createAnimation(root);
+        this.attackAnimation = MossGolemAnimation.ATTACK_ARMS.createAnimation(root);
+
         //this.idlingAnimation = MossGolemAnimation.IDLE.createAnimation(root);
     }
 

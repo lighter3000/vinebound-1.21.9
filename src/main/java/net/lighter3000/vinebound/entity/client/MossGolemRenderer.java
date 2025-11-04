@@ -14,6 +14,7 @@ import net.minecraft.util.Identifier;
 
 public class MossGolemRenderer extends MobEntityRenderer<MossGolemEntity, MossGolemRenderState, MossGolemModel> {
 
+
     public MossGolemRenderer(EntityRendererFactory.Context context) {
         super(context, new MossGolemModel(context.getPart(MossGolemModel.MOSS_GOLEM)), 0.75f);
     }

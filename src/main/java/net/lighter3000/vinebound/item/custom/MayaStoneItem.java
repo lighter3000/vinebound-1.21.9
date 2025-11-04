@@ -43,7 +43,7 @@ public class MayaStoneItem extends Item {
                     if(golem != null) {
                         golem.refreshPositionAndAngles(
                                 context.getBlockPos().getX() + 0.5,
-                                context.getBlockPos().getY() + 0.1,
+                                context.getBlockPos().getY(),
                                 context.getBlockPos().getZ() + 0.5,
                                 0.0F,
                                 0.0F

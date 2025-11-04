@@ -1,25 +1,34 @@
 package net.lighter3000.vinebound.entity.custom;
 
 import net.minecraft.entity.AnimationState;
+import net.minecraft.entity.ContainerUser;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.CopperGolemEntity;
 import net.minecraft.entity.passive.GolemEntity;
+import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
-public class MossGolemEntity extends CopperGolemEntity {
+public class MossGolemEntity extends GolemEntity {
 
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
 
-
     public MossGolemEntity(EntityType<? extends GolemEntity> entityType, World world) {
         super(entityType, world);
     }
+
 
     @Override
     protected void initGoals() {
@@ -39,6 +48,22 @@ public class MossGolemEntity extends CopperGolemEntity {
                 .add(EntityAttributes.ATTACK_DAMAGE, 1);
     }
 
+    @Override
+    protected @Nullable SoundEvent getAmbientSound() {
+        return SoundEvents.BLOCK_STONE_HIT;
+    }
+
+    @Override
+    protected @Nullable SoundEvent getHurtSound(DamageSource source) {
+        return SoundEvents.ENTITY_COPPER_GOLEM_HURT;
+    }
+
+    @Override
+    protected @Nullable SoundEvent getDeathSound() {
+        return SoundEvents.ENTITY_COPPER_GOLEM_DEATH;
+    }
+
+
     private void setupAnimationStates() {
         if (this.idleAnimationTimeout <= 0){
             this.idleAnimationTimeout = 40;
@@ -56,4 +81,19 @@ public class MossGolemEntity extends CopperGolemEntity {
             this.setupAnimationStates();
         }
     }
+
+
+    @Override
+    protected ActionResult interactMob(PlayerEntity player, Hand hand) {
+        ItemStack itemStack = player.getStackInHand(hand);
+        if(itemStack.isEmpty()){
+
+        }
+
+        return ActionResult.SUCCESS;
+    }
+
+
+
+
 }
