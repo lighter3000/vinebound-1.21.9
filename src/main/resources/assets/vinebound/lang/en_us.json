@@ -13,5 +13,8 @@
   "block.vinebound.trading_table": "Trading Table",
   "item.vinebound.trading_table": "Trading Table",
 
-  "item.vinebound.maya_stone": "Maya Stone"
+  "item.vinebound.maya_stone": "Maya Stone",
+
+  "block.vinebound.maya_stone_ore": "Maya Stone Ore",
+  "item.vinebound.maya_stone_ore": "Maya Stone Ore"
 }

@@ -3,6 +3,7 @@ package net.lighter3000.vinebound.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.lighter3000.vinebound.block.ModBlocks;
+import net.lighter3000.vinebound.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
@@ -29,6 +30,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MOSS_GOLEM);
         addDrop(ModBlocks.TRADING_TABLE);
         addDrop(ModBlocks.MOSS_STONE, silktouchDrop(ModBlocks.MOSS_STONE, Items.COBBLESTONE));
+        addDrop(ModBlocks.MAYA_STONE_ORE, oreDrops(ModBlocks.MAYA_STONE_ORE, ModItems.MAYA_STONE));
     }
 
 

@@ -14,9 +14,7 @@ public class ModModelProvider extends FabricModelProvider {
         super(output);
     }
 
-    /*
-    Currently trying to better understand how to implement this with custom models / textures that arent simple like a diamond block
-     */
+
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
@@ -25,6 +23,8 @@ public class ModModelProvider extends FabricModelProvider {
         //blockStateModelGenerator.registerGeneric(ModBlocks.MOSS_STONE);
         //blockStateModelGenerator.registerGeneric(ModBlocks.MOSS_GOLEM);
         //blockStateModelGenerator.registerGeneric(ModBlocks.TRADING_TABLE);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAYA_STONE_ORE);
     }
 
     @Override

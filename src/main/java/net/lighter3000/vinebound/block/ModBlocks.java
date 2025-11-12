@@ -47,6 +47,11 @@ public class ModBlocks {
             properties -> new TradingTableBlock(properties.nonOpaque()));
 
 
+    public static final Block MAYA_STONE_ORE = registerBlock("maya_stone_ore",
+            properties -> new ExperienceDroppingBlock(UniformIntProvider.create(1,1),
+                    properties.strength(4f).requiresTool()));
+
+
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
         Block toRegister = function.apply(AbstractBlock.Settings.create().registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Vinebound.MOD_ID, name))));
         registerBlockItem(name, toRegister);
@@ -71,6 +76,7 @@ public class ModBlocks {
             fabricItemGroupEntries.add(ModBlocks.MOSS_STONE);
             fabricItemGroupEntries.add(ModBlocks.MOSS_GOLEM);
             fabricItemGroupEntries.add(ModBlocks.TRADING_TABLE);
+            fabricItemGroupEntries.add(ModBlocks.MAYA_STONE_ORE);
         });
     }
 }

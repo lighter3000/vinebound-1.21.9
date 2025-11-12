@@ -20,7 +20,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class MossGolemEntity extends GolemEntity {
+public class MossGolemEntity extends GolemEntity{
 
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;

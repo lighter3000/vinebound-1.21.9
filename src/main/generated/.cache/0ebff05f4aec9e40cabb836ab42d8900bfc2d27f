@@ -1,3 +1,4 @@
 // 1.21.9	-999999999-01-01T00:00:00	Vinebound/Tags for minecraft:block
-df4d340874b0c0e0cbd950c5b10d78dfa19fcc64 data/minecraft/tags/block/mineable/pickaxe.json
+1758284f4446911292619c4faf5234fb604ee978 data/minecraft/tags/block/mineable/pickaxe.json
+8c6b1c3b1701339147d505bea0b37747aa94e1f9 data/minecraft/tags/block/needs_iron_tool.json
 79e8d4f309ab545d829a1fe4ee00c107a0861b4a data/minecraft/tags/block/needs_stone_tool.json
