@@ -1,7 +1,8 @@
 {
   "variants": {
-    "": {
-      "model": "vinebound:block/moss_golem"
-    }
+    "facing=north": { "model": "vinebound:block/moss_golem" },
+    "facing=east":  { "model": "vinebound:block/moss_golem", "y": 90 },
+    "facing=south": { "model": "vinebound:block/moss_golem", "y": 180 },
+    "facing=west":  { "model": "vinebound:block/moss_golem", "y": 270 }
   }
 }

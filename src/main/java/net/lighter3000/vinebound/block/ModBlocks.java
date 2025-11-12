@@ -2,6 +2,7 @@ package net.lighter3000.vinebound.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lighter3000.vinebound.Vinebound;
+import net.lighter3000.vinebound.block.custom.MossGolemBlock;
 import net.lighter3000.vinebound.block.custom.TradingTableBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -40,7 +41,7 @@ public class ModBlocks {
                     .requiresTool().sounds(BlockSoundGroup.STONE)));
 
     public static final Block MOSS_GOLEM = registerBlock("moss_golem",
-            properties -> new Block(properties.strength(4f)
+            properties -> new MossGolemBlock(properties.strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.STONE).nonOpaque()));
 
     public static final Block TRADING_TABLE = registerBlock("trading_table",
