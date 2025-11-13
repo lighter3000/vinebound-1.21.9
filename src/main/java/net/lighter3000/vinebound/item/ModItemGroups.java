@@ -24,6 +24,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MOSS_GOLEM);
                         entries.add(ModBlocks.TRADING_TABLE);
                         entries.add(ModItems.MAYA_STONE);
+                        entries.add(ModBlocks.MAYA_STONE_ORE);
+                        entries.add(ModBlocks.MOSSY_MOSS_STONE);
                     }).build());
 
 

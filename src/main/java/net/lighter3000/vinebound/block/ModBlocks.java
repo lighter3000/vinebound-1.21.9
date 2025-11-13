@@ -40,6 +40,10 @@ public class ModBlocks {
             properties -> new Block(properties.strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.STONE)));
 
+    public static final Block MOSSY_MOSS_STONE = registerBlock("mossy_moss_stone",
+            properties -> new Block(properties.strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
     public static final Block MOSS_GOLEM = registerBlock("moss_golem",
             properties -> new MossGolemBlock(properties.strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.STONE).nonOpaque()));
@@ -78,6 +82,7 @@ public class ModBlocks {
             fabricItemGroupEntries.add(ModBlocks.MOSS_GOLEM);
             fabricItemGroupEntries.add(ModBlocks.TRADING_TABLE);
             fabricItemGroupEntries.add(ModBlocks.MAYA_STONE_ORE);
+            fabricItemGroupEntries.add(ModBlocks.MOSSY_MOSS_STONE);
         });
     }
 }

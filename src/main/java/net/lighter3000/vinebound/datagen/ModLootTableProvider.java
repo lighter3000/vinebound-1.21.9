@@ -31,6 +31,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.TRADING_TABLE);
         addDrop(ModBlocks.MOSS_STONE, silktouchDrop(ModBlocks.MOSS_STONE, Items.COBBLESTONE));
         addDrop(ModBlocks.MAYA_STONE_ORE, oreDrops(ModBlocks.MAYA_STONE_ORE, ModItems.MAYA_STONE));
+        addDrop(ModBlocks.MOSSY_MOSS_STONE, silktouchDrop(ModBlocks.MOSSY_MOSS_STONE, Items.MOSSY_COBBLESTONE));
     }
 
 
