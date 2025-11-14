@@ -40,9 +40,65 @@ public class ModBlocks {
             properties -> new Block(properties.strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.STONE)));
 
+
+
+
+
+
     public static final Block MOSSY_MOSS_STONE = registerBlock("mossy_moss_stone",
             properties -> new Block(properties.strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    /*
+
+    public static final Block MOSS_STONE_STAIRS = registerBlock("moss_stone_stairs",
+        properties -> new StairsBlock(ModBlocks.MOSS_STONE.getDefaultState(),
+                properties.strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSS_STONE_SLAB = registerBlock("moss_stone_slab",
+            properties -> new SlabBlock(properties.strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSS_STONE_BUTTON = registerBlock("moss_stone_button",
+            properties -> new ButtonBlock(BlockSetType.STONE, 2,
+                    properties.strength(4f).requiresTool().sounds(BlockSoundGroup.STONE).noCollision()));
+
+    public static final Block MOSS_STONE_PRESSURE_PLATE = registerBlock("moss_stone_pressure_plate",
+            properties -> new PressurePlateBlock(BlockSetType.STONE, properties.strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSS_STONE_WALLS = registerBlock("moss_stone_wall",
+            properties -> new WallBlock(properties.strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_MOSS_STONE_STAIRS = registerBlock("mossy_moss_stairs",
+            properties -> new StairsBlock(ModBlocks.MOSSY_MOSS_STONE.getDefaultState(),
+                    properties.strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_MOSS_STONE_SLAB = registerBlock("mossy_moss_slab",
+            properties -> new SlabBlock(properties.strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block MOSSY_MOSS_STONE_BUTTON = registerBlock("mossy_moss_button",
+            properties -> new ButtonBlock(BlockSetType.STONE, 2,
+                    properties.strength(4f).requiresTool().sounds(BlockSoundGroup.STONE).noCollision()));
+
+    public static final Block MOSSY_MOSS_STONE_PRESSURE_PLATE = registerBlock("mossy_moss_pressure_plate",
+            properties -> new PressurePlateBlock(BlockSetType.STONE, properties.strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+
+    public static final Block MOSSY_MOSS_STONE_WALLS = registerBlock("mossy_moss_wall",
+            properties -> new WallBlock(properties.strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+     */
+
+
+
+
+
+
 
     public static final Block MOSS_GOLEM = registerBlock("moss_golem",
             properties -> new MossGolemBlock(properties.strength(4f)
@@ -55,6 +111,9 @@ public class ModBlocks {
     public static final Block MAYA_STONE_ORE = registerBlock("maya_stone_ore",
             properties -> new ExperienceDroppingBlock(UniformIntProvider.create(1,1),
                     properties.strength(4f).requiresTool()));
+
+
+
 
 
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> function) {
@@ -79,10 +138,32 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.MOSS_STONE);
+            fabricItemGroupEntries.add(ModBlocks.MOSSY_MOSS_STONE);
+
+
+            /*
+            fabricItemGroupEntries.add(ModBlocks.MOSS_STONE_STAIRS);
+            fabricItemGroupEntries.add(ModBlocks.MOSS_STONE_SLAB);
+            fabricItemGroupEntries.add(ModBlocks.MOSS_STONE_BUTTON);
+            fabricItemGroupEntries.add(ModBlocks.MOSS_STONE_PRESSURE_PLATE);
+            fabricItemGroupEntries.add(ModBlocks.MOSS_STONE_WALLS);
+
+
+            fabricItemGroupEntries.add(ModBlocks.MOSSY_MOSS_STONE_STAIRS);
+            fabricItemGroupEntries.add(ModBlocks.MOSSY_MOSS_STONE_SLAB);
+            fabricItemGroupEntries.add(ModBlocks.MOSSY_MOSS_STONE_BUTTON);
+            fabricItemGroupEntries.add(ModBlocks.MOSSY_MOSS_STONE_PRESSURE_PLATE);
+            fabricItemGroupEntries.add(ModBlocks.MOSSY_MOSS_STONE_WALLS);
+
+
+             */
+
             fabricItemGroupEntries.add(ModBlocks.MOSS_GOLEM);
             fabricItemGroupEntries.add(ModBlocks.TRADING_TABLE);
             fabricItemGroupEntries.add(ModBlocks.MAYA_STONE_ORE);
-            fabricItemGroupEntries.add(ModBlocks.MOSSY_MOSS_STONE);
+
+
+
         });
     }
 }

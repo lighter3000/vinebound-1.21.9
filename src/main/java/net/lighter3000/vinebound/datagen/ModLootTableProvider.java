@@ -32,6 +32,21 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MOSS_STONE, silktouchDrop(ModBlocks.MOSS_STONE, Items.COBBLESTONE));
         addDrop(ModBlocks.MAYA_STONE_ORE, oreDrops(ModBlocks.MAYA_STONE_ORE, ModItems.MAYA_STONE));
         addDrop(ModBlocks.MOSSY_MOSS_STONE, silktouchDrop(ModBlocks.MOSSY_MOSS_STONE, Items.MOSSY_COBBLESTONE));
+
+        /*
+        addDrop(ModBlocks.MOSS_STONE_STAIRS);
+        addDrop(ModBlocks.MOSS_STONE_SLAB, slabDrops(ModBlocks.MOSS_STONE_SLAB));
+        addDrop(ModBlocks.MOSS_STONE_BUTTON);
+        addDrop(ModBlocks.MOSS_STONE_PRESSURE_PLATE);
+        addDrop(ModBlocks.MOSS_STONE_WALLS);
+
+        addDrop(ModBlocks.MOSSY_MOSS_STONE_STAIRS);
+        addDrop(ModBlocks.MOSSY_MOSS_STONE_SLAB, slabDrops(ModBlocks.MOSSY_MOSS_STONE_SLAB));
+        addDrop(ModBlocks.MOSSY_MOSS_STONE_BUTTON);
+        addDrop(ModBlocks.MOSSY_MOSS_STONE_PRESSURE_PLATE);
+        addDrop(ModBlocks.MOSSY_MOSS_STONE_WALLS);
+
+         */
     }
 
 

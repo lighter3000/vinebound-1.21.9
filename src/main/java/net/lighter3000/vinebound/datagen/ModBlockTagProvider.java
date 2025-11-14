@@ -18,14 +18,51 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         valueLookupBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.MOSS_GOLEM)
                 .add(ModBlocks.MOSS_STONE)
+                .add(ModBlocks.MOSSY_MOSS_STONE)
                 .add(ModBlocks.TRADING_TABLE)
                 .add(ModBlocks.MAYA_STONE_ORE);
+        /*
+                .add(ModBlocks.MOSS_STONE_STAIRS)
+                .add(ModBlocks.MOSS_STONE_SLAB)
+                .add(ModBlocks.MOSS_STONE_BUTTON)
+                .add(ModBlocks.MOSS_STONE_PRESSURE_PLATE)
+                .add(ModBlocks.MOSS_STONE_WALLS)
+                .add(ModBlocks.MOSSY_MOSS_STONE_STAIRS)
+                .add(ModBlocks.MOSSY_MOSS_STONE_SLAB)
+                .add(ModBlocks.MOSSY_MOSS_STONE_BUTTON)
+                .add(ModBlocks.MOSSY_MOSS_STONE_PRESSURE_PLATE)
+                .add(ModBlocks.MOSSY_MOSS_STONE_WALLS);
+
+         */
 
         valueLookupBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.MOSS_GOLEM)
-                .add(ModBlocks.MOSS_STONE);
+                .add(ModBlocks.MOSS_STONE)
+                .add(ModBlocks.MOSSY_MOSS_STONE);
+
+        /*
+                .add(ModBlocks.MOSS_STONE_STAIRS);
+                .add(ModBlocks.MOSS_STONE_SLAB)
+                .add(ModBlocks.MOSS_STONE_BUTTON)
+                .add(ModBlocks.MOSS_STONE_PRESSURE_PLATE)
+                .add(ModBlocks.MOSS_STONE_WALLS)
+                .add(ModBlocks.MOSSY_MOSS_STONE_STAIRS)
+                .add(ModBlocks.MOSSY_MOSS_STONE_SLAB)
+                .add(ModBlocks.MOSSY_MOSS_STONE_BUTTON)
+                .add(ModBlocks.MOSSY_MOSS_STONE_PRESSURE_PLATE)
+                .add(ModBlocks.MOSSY_MOSS_STONE_WALLS);
+
+         */
+
 
         valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.MAYA_STONE_ORE);
+
+        /*
+        valueLookupBuilder(BlockTags.WALLS)
+                .add(ModBlocks.MOSS_STONE_WALLS)
+                .add(ModBlocks.MOSSY_MOSS_STONE_WALLS);
+
+         */
     }
 }

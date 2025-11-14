@@ -9,6 +9,8 @@ import net.minecraft.data.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.item.MinecartItem;
+import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 
@@ -31,6 +33,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('C', Items.COBBLESTONE)
                         .criterion(hasItem(Items.COBBLESTONE), conditionsFromItem(Items.COBBLESTONE))
                         .offerTo(exporter);
+
+                /*
+                createStairsRecipe(ModBlocks.MOSS_STONE_STAIRS, Ingredient.ofItem(ModBlocks.MOSS_STONE));
+                createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSS_STONE_SLAB, Ingredient.ofItem(ModBlocks.MOSS_STONE));
+                createButtonRecipe(ModBlocks.MOSS_STONE_BUTTON, Ingredient.ofItem(ModBlocks.MOSS_STONE));
+                createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MOSS_STONE_PRESSURE_PLATE, Ingredient.ofItem(ModBlocks.MOSS_STONE));
+                // wall recipe method missing?
+
+                 */
             }
         };
     }

@@ -5,6 +5,45 @@
   "block.vinebound.moss_stone": "Moss Stone",
   "item.vinebound.moss_stone": "Moss Stone",
 
+  "block.vinebound.mossy_moss_stone": "Mossy Moss Stone",
+  "item.vinebound.mossy_moss_stone": "Mossy Moss Stone",
+
+
+
+  "block.vinebound.moss_stone_stairs": "Moss Stone Stairs",
+  "item.vinebound.moss_stone_stairs": "Moss Stone Stairs",
+
+  "block.vinebound.moss_stone_slab": "Moss Stone Slab",
+  "item.vinebound.moss_stone_slab": "Moss Stone Slab",
+
+  "block.vinebound.moss_stone_button": "Moss Stone Button",
+  "item.vinebound.moss_stone_button": "Moss Stone Button",
+
+  "block.vinebound.moss_stone_pressure_plate": "Moss Stone Pressure Plate",
+  "item.vinebound.moss_stone_pressure_plate": "Moss Stone Pressure Plate",
+
+  "block.vinebound.moss_stone_wall": "Moss Stone Walls",
+  "item.vinebound.moss_stone_wall": "Moss Stone Walls",
+
+
+
+
+  "block.vinebound.mossy_moss_stairs": "Mossy Moss Stone Stairs",
+  "item.vinebound.mossy_moss_stairs": "Mossy Moss Stone Stairs",
+
+  "block.vinebound.mossy_moss_slab": "Mossy Moss Stone Slab",
+  "item.vinebound.mossy_moss_slab": "Mossy Moss Stone Slab",
+
+  "block.vinebound.mossy_moss_button": "Mossy Moss Stone Button",
+  "item.vinebound.mossy_moss_button": "Mossy Moss Stone Button",
+
+  "block.vinebound.mossy_moss_pressure_plate": "Mossy Moss Stone Pressure Plate",
+  "item.vinebound.mossy_moss_pressure_plate": "Mossy Moss Stone Pressure Plate",
+
+  "block.vinebound.mossy_moss_wall": "Mossy Moss Stone Wall",
+  "item.vinebound.mossy_moss_wall": "Mossy Moss Stone Wall",
+
+
   "itemgroup.vinebound.vinebound_items": "Vinebound",
 
   "block.vinebound.moss_golem": "Moss Golem",
@@ -16,8 +55,7 @@
   "item.vinebound.maya_stone": "Maya Stone",
 
   "block.vinebound.maya_stone_ore": "Maya Stone Ore",
-  "item.vinebound.maya_stone_ore": "Maya Stone Ore",
+  "item.vinebound.maya_stone_ore": "Maya Stone Ore"
 
-  "block.vinebound.mossy_moss_stone": "Mossy Moss Stone",
-  "item.vinebound.mossy_moss_stone": "Mossy Moss Stone"
+
 }

@@ -20,12 +20,33 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.ANCIENT_HAMMER);
                         entries.add(ModItems.ANCIENT_CHISEL);
+
                         entries.add(ModBlocks.MOSS_STONE);
+                        entries.add(ModBlocks.MOSSY_MOSS_STONE);
+
+                        /*
+                        entries.add(ModBlocks.MOSS_STONE_STAIRS);
+                        entries.add(ModBlocks.MOSS_STONE_SLAB);
+                        entries.add(ModBlocks.MOSS_STONE_BUTTON);
+                        entries.add(ModBlocks.MOSS_STONE_PRESSURE_PLATE);
+                        entries.add(ModBlocks.MOSS_STONE_WALLS);
+
+
+
+                        entries.add(ModBlocks.MOSSY_MOSS_STONE_STAIRS);
+                        entries.add(ModBlocks.MOSSY_MOSS_STONE_SLAB);
+                        entries.add(ModBlocks.MOSSY_MOSS_STONE_BUTTON);
+                        entries.add(ModBlocks.MOSSY_MOSS_STONE_PRESSURE_PLATE);
+                        entries.add(ModBlocks.MOSSY_MOSS_STONE_WALLS);
+
+
+                         */
+
                         entries.add(ModBlocks.MOSS_GOLEM);
                         entries.add(ModBlocks.TRADING_TABLE);
                         entries.add(ModItems.MAYA_STONE);
                         entries.add(ModBlocks.MAYA_STONE_ORE);
-                        entries.add(ModBlocks.MOSSY_MOSS_STONE);
+
                     }).build());
 
 

@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "vinebound:item/moss_stone"
+    "model": "vinebound:block/moss_stone"
   }
 }
